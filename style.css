@@ -1,0 +1,180 @@
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+body {
+    font-family: 'inter', sans-serif, 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    height: 100vh;
+    display: -moz-grid;
+    display: -ms-grid;
+    display: grid;
+
+    place-items: center;
+    background-color: black;
+    color: #e8e8e2;
+}
+
+
+
+.hero img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    clip-path:circle(50% at 50% 50%);
+    filter: grayscale(0);
+    transition: all 500ms ease-in-out;
+}
+
+.hero img:hover,
+.hero img:focus {
+    filter: grayscale(1);
+}
+
+.author h2{
+    color: rgb(255, 255, 255) ;
+}
+
+.author {
+    margin-bottom: 2rem;
+    color: rgb(188, 127, 245) ;
+}
+
+.name {
+    font-size: 900;
+    font-size: 2rem;
+}
+
+.location {
+    font-weight: 400;
+}
+
+#container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+
+    width: 90%;
+    max-width: 1100px;
+    align-items: center;
+    gap: 2rem;
+}
+
+.media-social {
+    margin-top: 20px;
+    margin-bottom: 20px ;
+}
+
+i {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin-right: 10px;
+   
+    
+}
+
+i:hover {
+    color: rgb(188, 127, 245);
+    transition: all 0.5s;
+    
+}
+ 
+a {
+    border: none;
+    text-decoration: none;
+}
+
+.icon-arrow {
+    font-size: 22px;
+    position: absolute;
+    margin-left: -65px;
+    margin-top: -7px;
+}
+
+
+.btn span {
+    margin-left: 15px;
+    position: absolute;
+    margin-right: -15px;
+    margin-left: -30px;
+    margin-top: -10px;
+}
+
+button {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 6px;
+    
+}
+
+.btn .bt {
+    font-family: 'inter', sans-serif;
+    cursor: pointer;
+    background: none;
+    color: white; 
+    background-color: rgb(80, 80, 80);
+    border-style: none;
+    text-align: center;
+    align-items: center;
+    width: 245px;
+    height: 55px;
+    font-size: 20px;
+    border-radius: 15px;
+    padding-bottom: 10px; 
+    padding-top: 10px ;
+}
+
+.btn .bt:hover {
+    background-color: rgb(150, 127, 235);
+    transition: 0.9s;
+}
+
+.btn2 .bt2{
+    font-family: 'inter', sans-serif;
+    cursor: pointer;
+    background: none;
+    color: white; 
+    background-color: rgb(80, 80, 80);
+    border-style: none;
+    text-align: center;
+    align-items: center;
+    width: 310px;
+    height: 55px;
+    font-size: 20px;
+    border-radius: 15px;
+    padding-bottom: 10px; 
+    padding-top: 10px ;
+    margin-left: -120px;
+}
+
+
+.btn2 .bt2:hover {
+    background-color: rgb(150, 127, 235);
+    transition: 0.9s;
+}
+
+
+
+.btts {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+@media (max-width: 900px) {
+    #container {
+        flex-wrap: wrap;
+        flex-direction: column ;
+    }
+}
+
+@media (max-width: 400px) {
+.hero img {
+    width: 250px;
+    height: 250px;
+}
+}
